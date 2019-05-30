@@ -1,0 +1,23 @@
+<div class='list-items columns is-multiline list-posts'>
+{{ range (where .Site.RegularPages "Type" "posts").ByDate.Reverse }}
+<div class="column is-one-third ">
+<a href="{{ .RelPermalink }}">
+<div class="publication">
+
+<div class="publication-image">
+<img class='zoom lazy' src='{{ "img/placeholder.png" | absURL }}' data-src='{{ $.Site.Data.paramsite.baseUrlImage }}/w_400/{{ .Params.logo }}' alt="Logo de l'article {{ .Title }}" />
+</div>
+
+                
+<div class='publication-titre'>
+        <p class='is-4 subtitle'>{{ .Title }}</p>
+</div>
+<div class="date-publication">
+    Le {{ .Date.Day }} {{ index $.Site.Data.mois (printf "%d" .Date.Month) }} {{ .Date.Year }}
+</div>
+
+</div>
+</a>
+</div>
+{{ end }}
+</div>

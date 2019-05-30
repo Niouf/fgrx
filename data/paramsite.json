@@ -1,10 +1,11 @@
 {
   "title": "Fabien Grignoux",
+  "subtitle1":"Développeur web fullstack",
+  "subtitle2":"Angular / Symfony / Nodejs / PHP",
   "author": "Fabien Grignoux",
   "lang": "fr_FR",
   "subtitle": "Développeur Angular / NodeJs / Symfony",
   "mail": "fab.grignoux@gmail.com",
   "phone": "06.24.86.71.69",
-  "analytics": "UA-105993599-1",
-  "baseUrlImage": "https://res.cloudinary.com/catherinetardella/image/upload/v1558281484/",
+  "analytics": "UA-141104841-1"
 }

@@ -1,4 +1,4 @@
-baseURL = "http://fgrx.dev/"
-languageCode = "en-us"
+baseURL = "http://fgrx.netlify.com/"
+languageCode = "fr-FR"
 title = "Fabien Grignoux"
 theme = "fgrx"

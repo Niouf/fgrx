@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
+@import url("https://fonts.googleapis.com/css?family=Cinzel|Gothic+A1|Lalezar|Muli|Noto+Sans+TC|Philosopher|Ramabhadra|Teko&display=swap");
 @-webkit-keyframes spinAround {
   from {
     -webkit-transform: rotate(0deg);
@@ -11506,393 +11506,133 @@ label.panel-block:hover {
   padding: 3rem 1.5rem 6rem;
 }
 
-/*
-@font-face {
-	font-family: "overlock";
-	src: url("../../../fonts/Overlock-Regular.woff");
-	font-display: swap;
-  }
-
-  @font-face {
-	font-family: "cinzel";
-	src: url("../../../fonts/Cinzel.woff");
-	font-display: swap;
-  }
-*/
 body {
-  background: #eeeeee;
-  font-family: overlock;
-  font-size: 1em;
-  font-family: 'Source Sans Pro', sans-serif;
+  background-color: black;
 }
 
-.section-headhome {
+a {
+  color: #71f54a;
+}
+
+a.button.is-primary {
+  color: #71f54a !important !important;
+  border-color: #71f54a !important !important;
+}
+
+.fg {
+  text-transform: uppercase;
+  font-family: 'Teko';
+  color: #41ef7b;
+  font-size: 4em;
+  line-height: 0.7em;
+}
+
+.devlyon {
+  color: #41ef7b;
+  font-family: 'Muli';
+}
+
+.home-top {
   position: relative;
 }
 
-.section-headhome .text-header {
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  position: absolute;
-  z-index: 2;
-  text-align: center;
-  width: 100%;
+.home-top h2 {
+  font-family: "Philosopher";
 }
 
-.section-headhome h1 {
-  font-size: 4em;
-  font-family: 'Raleway', sans-serif;
-}
-
-.section-headhome .resume-home {
-  font-size: 1.5em;
-  font-family: 'Raleway', sans-serif;
-}
-
-@media screen and (max-width: 800px) {
-  .section-headhome h1 {
-    font-size: 2.5em;
-    text-align: center;
-  }
-  .section-headhome .resume-home {
-    font-size: 1.3em;
-    text-align: center;
-  }
-}
-
-.section-headhome .logo-home img {
-  width: 150px;
-  height: auto;
-}
-
-.section-headhome .image-home {
-  padding: 0;
-  margin: 0;
-}
-
-.align-right {
-  text-align: right;
-}
-
-.align-left {
-  text-align: left;
-}
-
-.centered {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-a.button {
-  border-color: #7c2c22 !important;
-}
-
-.center-cropped {
-  -o-object-fit: cover;
-     object-fit: cover;
-  /* Do not scale the image */
-  -o-object-position: center;
-     object-position: center;
-  /* Center the image within the element */
-}
-
-.section-presentation {
-  background: url("../../img/fondpresentation.png") no-repeat white;
-  background-size: 100% 100%;
-  margin-top: -10px;
-  z-index: 4;
-  padding-bottom: 130px !important;
-}
-
-@media screen and (max-width: 800px) {
-  .section-presentation .portrait {
-    max-width: 200px;
-  }
-}
-
-.section-presentation h2 {
-  padding-top: 10px;
-  font-size: 2em;
-  font-family: 'Raleway', sans-serif;
-}
-
-.section-publication {
-  background-color: white;
-  padding-bottom: 60px !important;
-}
-
-.section-publication .logo-article {
-  border-radius: 1%;
-}
-
-.titleSiteMenu {
-  font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
-}
-
-.navbar-burger {
-  color: white;
-}
-
-.menu-burger {
-  float: right;
-  margin-top: -1em;
-}
-
-.navbar a, .is-active a {
-  color: white;
-}
-
-.navbar a:hover, .is-active a:hover {
-  color: #025d8c;
-  background-color: #464545 !important;
-}
-
-.navbar .content-fixed, .is-active .content-fixed {
-  background-color: #8acbb2;
-  text-align: center;
-  width: 100%;
-}
-
-.navbar .content-fixed .fixed-links, .is-active .content-fixed .fixed-links {
-  margin-right: 3em;
-}
-
-.navbar .content-fixed .infos-nav-bar, .is-active .content-fixed .infos-nav-bar {
-  padding-top: 1em;
-}
-
-.menuGeneral {
-  background: #8acbb2;
-  font-family: cinzel;
-  font-size: 1.4em;
-}
-
-.menuGeneral #navMenuDesktop a.navbar-item {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#navMenuMobile {
-  background: #8acbb2;
-  font-family: cinzel;
-  font-size: 1.4em;
-}
-
-.bloc-portrait {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  background: white;
-  font-family: cinzel;
-  margin-bottom: 20px;
-}
-
-.titles h1 {
-  color: #025d8c;
-  font-family: cinzel;
-  font-size: 2.8em;
-  text-transform: uppercase;
-}
-
-.titles .subtitle {
-  font-size: 2em;
-  color: #025d8c;
-  font-family: cinzel;
-}
-
-@media screen and (max-width: 800px) {
-  .titles {
-    text-align: center;
-  }
-}
-
-.content h1 {
-  font-family: cinzel;
-  color: #025d8c;
-  font-size: 2.5em;
-}
-
-.content h2 {
-  font-family: cinzel;
-  color: #025d8c;
-}
-
-.content h3 {
-  font-family: cinzel;
-  color: black;
-}
-
-.content a {
-  color: #025d8c !important;
-}
-
-ul li {
-  margin-left: 1em;
-  list-style-type: circle;
-}
-
-.portrait {
-  border-radius: 50%;
-  text-align: center;
-}
-
-.content, .moreContent {
-  background: white;
-  padding: 3em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-/*******************************************************/
-.article .title-article, .article .subtitle-article {
-  font-family: Times, "Times New Roman", Georgia, serif;
-  text-transform: uppercase;
-}
-
-@media screen and (max-width: 800px) {
-  .article .content-article {
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-}
-
-.article .title-article {
-  font-size: 2.3em;
-}
-
-.article .subtitle-article {
-  font-size: 1.5em;
-}
-
-.article .subtitle-article {
-  margin-top: 2em;
-}
-
-.article .description-article {
-  font-size: 1.1em;
-  font-weight: bold;
-  margin-bottom: 1em;
-}
-
-.article .top-article {
-  padding-top: 1em;
-}
-
-.article .top-article .title-header-article {
-  font-size: 3.3em;
-  font-family: "title1", Helvetica, Arial, sans-serif;
-  text-align: center;
-}
-
-@media screen and (max-width: 640px) {
-  .article .top-article .title-header-article {
-    font-size: 2.5em;
-  }
-}
-
-.article .top-article .logo-article {
-  margin-bottom: 0.8em;
-  height: 350px;
-  width: 100%;
-}
-
-.article .top-article .logo-article:hover {
-  -webkit-transform: scale(1.01, 1.01);
-          transform: scale(1.01, 1.01);
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-}
-
-.article .top-article .logo-article img {
-  height: 350px;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.article .top-article .publication-titre {
-  z-index: 1;
-  background-color: whitesmoke;
-  padding: 1em;
-  width: 100%;
-}
-
-section.bloc {
-  padding-top: 2em;
-  padding-bottom: 2em;
-}
-
-.padding {
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-}
-
-.section-home {
-  background-color: white;
+.home-top .content-home-top {
+  background: url("../../img/fondfgrx2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  display: block;
   height: 80vh;
+  top: 0;
+  bottom: 0;
+  width: 100%;
 }
 
-.navbar {
-  background: #1b1c1d !important;
+.home-top .inner-home {
+  vertical-align: middle;
+  width: 100%;
+  display: inline-block;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0%;
+  margin: auto;
+  padding-left: 3em;
 }
 
-.navbar a {
-  color: white !important;
+.home-top .fg {
+  font-size: 4em;
+}
+
+.home-top .devlyon {
+  font-size: 1.7em;
+}
+
+.home-top .technos {
+  color: white;
+  font-family: "Philosopher";
+  font-size: 2.2em;
+  margin-top: 1.2em;
+}
+
+.home-realisations {
+  background: #1d1d1d;
+}
+
+.home-competences {
+  background: #41ef7b;
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+.home-competences h2 {
+  color: #5c5c5c;
+}
+
+.home-competences .competences {
+  font-size: 2em;
+  font-family: "Philosopher";
+}
+
+.home-competences i {
+  text-align: center;
+  font-size: 3.5em;
+}
+
+.home-contact {
+  background: white;
+  padding: 4em;
+}
+
+.home-contact h2 {
+  color: #5c5c5c;
+}
+
+.home-contact .logo-mail {
+  font-size: 20em;
+  color: #20ca58;
+}
+
+.home-contact input, .home-contact textarea {
+  margin-bottom: 1em;
+}
+
+h2 {
+  color: #dedddd;
+  font-size: 4em;
+  font-family: "Teko";
 }
 
 footer {
-  padding-top: 5em;
-  padding-bottom: 2em;
-  background: #1b1c1d;
-  color: white;
+  background: #1d1d1d;
+  padding: 4em;
+  color: #dedddd;
 }
 
-footer a {
-  color: white !important;
-  text-decoration: underline;
-}
-
-footer p {
-  line-height: 2.2em;
-}
-
-footer strong {
-  color: white;
-}
-
-footer a {
-  color: #8acbb2;
-}
-
-footer a:hover {
-  color: #025d8c;
-}
-
-footer .name-brand {
-  font-family: 'Raleway', sans-serif;
-  color: white;
-  text-transform: uppercase;
-  border-bottom: 1px solid #7c2c22;
-  font-size: 1.6em;
-}
-
-footer .credits {
-  margin-top: 3em;
-  text-align: center;
-  width: 100%;
-  color: #b3b3b3;
-  font-size: 0.8em;
-}
-
-footer .credits a {
-  color: #b3b3b3;
+footer .devlyon {
+  font-size: 1.3em;
 }
 /*# sourceMappingURL=styles.css.map */
