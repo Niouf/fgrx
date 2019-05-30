@@ -1,4 +1,5 @@
-baseURL = "https://fgrx.netlify.com/"
+baseURL = "https://fgrx.netlify.com"
 languageCode = "fr-FR"
-title = "Fabien Grignoux"
 theme = "fgrx"
+[params]
+description = "Portfolio de Fabien Grignoux"
