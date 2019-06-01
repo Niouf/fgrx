@@ -5,7 +5,7 @@
 	{{ partial "head.html" . }}
 </head>
 
-<body>
+<body class='homepage'>
 
 <section>
     <div class="home-top">
@@ -19,7 +19,27 @@
 </section>
 
 
-
+<section>
+    <div class="section home-presentation">
+        <div class="container">
+                <h2 class='is-2'>Présentation</h2>
+            <div class="columns">
+                <div class="column is-7">
+                    
+                    <p>Développeur depuis plus de 15 ans, j'ai vu grandir le web et ses technologies qui m'ont toujours passionnées. J'ai très vite choisi de me spécialiser sur la réalisation de sites internet et d'applications.</p>
+                    
+                    <p>Après avoir travaillé pour le ministère de la Défense, la Bibliothèque et la ville de Lyon j'ai choisi de partir à l'aventure en devenant Freelance. 
+                    </p>
+                    
+                    <p>Je vous propose mes services en tant que développeur pour vos applications backend ou frontend en utilisant les dernières technologies. La diversité des missions que j'ai mené à bien me permettent de m'intégrer en souplesse à votre structure et vos projets.</p> 
+                </div>
+                <div class="column i-4 is-offset-1">
+                    <img src="{{ "img/portrait.jpg" | absURL }}" class='portrait' alt="Portrait Fabien Grignoux">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <section>
@@ -27,12 +47,13 @@
         <div class="container">
             <h2 class='is-2'>Mes compétences</h2>
             
-            <div class="columns competences">
-                <div class="column"><i class="fab fa-angular"></i> <br> Angular</div>
-                <div class="column"><i class="fab fa-symfony"></i> <br> Symfony</div>
-                <div class="column"><i class="fab fa-php"></i> <br> PHP</div>
-                <div class="column"><i class="fab fa-node"></i> <br> Node.js</div>
-                <div class="column"><i class="fab fa-vuejs"></i> <br> Vue.js</div>
+            <div class="columns competences is-mobile is-multiline">
+                <div class="column is-half-mobile"><i class="fab fa-angular"></i> <br> Angular</div>
+                <div class="column is-half-mobile"><i class="fab fa-symfony"></i> <br> Symfony</div>
+                <div class="column is-half-mobile"><i class="fab fa-php"></i> <br> PHP</div>
+                <div class="column is-half-mobile"><i class="fab fa-node"></i> <br> Node.js</div>
+                <div class="column is-half-mobile"><i class="fab fa-vuejs"></i> <br> Vue.js</div>
+                <div class="column is-half-mobile"><i class="fab fa-wordpress"></i> <br> Wordpress</div>
             </div>
             
         </div>
@@ -41,7 +62,7 @@
 
 <section class="home-realisations">
     <div class="container">
-            <h2 class='is-2'>Dernières réalisations</h2>
+            <h2 class='is-2'>Quelques réalisations</h2>
     </div>
     
 </section>
@@ -52,7 +73,7 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-3 is-hidden-mobile    ">
-                    <!--<img src='{{ "img/mail1.png" | absURL }}' alt="image de contact" />-->
+                    
                     <i class="logo-mail fas fa-envelope"></i>
                 </div>
                 <div class="is-6 is-offset-1 column">
@@ -93,9 +114,9 @@
                 </div>
                 <div class="column">
                     <div class="buttons">
-                        <a target="_blank" class='button is-primary is-outlined' href='https://www.linkedin.com/in/fabien-grignoux-3ab9a4167/'><i class="fab fa-linkedin"></i> LinkedIn</a><br>
-                        <a target="_blank" class='button is-primary is-outlined'  href='mailto:{{ $.Site.Data.paramsite.mail }}'><i class="fas fa-envelope"></i> Email</a><br>
-                        <a class='button is-primary is-outlined'  href='phone:{{ $.Site.Data.paramsite.phone }}'><i class="fas fa-phone"></i> {{ $.Site.Data.paramsite.phone }}</a>
+                        <a target="_blank" class='button  is-outlined' href='https://www.linkedin.com/in/fabien-grignoux-3ab9a4167/'><i class="fab fa-linkedin"></i> LinkedIn</a><br>
+                        <a target="_blank" class='button is-outlined'  href='mailto:{{ $.Site.Data.paramsite.mail }}'><i class="fas fa-envelope"></i> Email</a><br>
+                        <a class='button is-outlined'  href='phone:{{ $.Site.Data.paramsite.phone }}'><i class="fas fa-phone"></i> {{ $.Site.Data.paramsite.phone }}</a>
                     </div>
                 </div>
             </div>

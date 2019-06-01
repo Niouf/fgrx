@@ -1,5 +1,8 @@
 body{
 	background-color:black;
+	p{
+		margin-bottom:1em;
+	}
 }
 
 
@@ -98,7 +101,6 @@ a.button.is-primary{
 
 
 
-
 .home-realisations{
 	background:$background-princ;
 }
@@ -137,12 +139,17 @@ a.button.is-primary{
 
 	.logo-mail{
 		font-size:20em;
-		color:#20ca58;
+		color:#5fef8e;
 	}
 
 	input,textarea{
 		margin-bottom:1em;
 	}
+}
+
+.home-presentation{
+	color:$couleur-text-light;
+	font-size:1.2em;
 }
 
 h2{
@@ -157,9 +164,18 @@ h2{
 	}
 }
 
+.portrait{
+	border-radius: 50%;
+	text-align:center;
+	object-position: center;
+    max-width: 100%;
+    max-height: 100%;
+}
 
 footer{
-	background:$background-footer;
+	background:url("../../img/fond.png") top no-repeat;
+	background-size: 100%;
+	background-color:$background-footer;
 	padding:4em;
 	color:$couleur-text-light;
 	.devlyon{

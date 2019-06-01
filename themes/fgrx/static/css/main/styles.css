@@ -11510,6 +11510,10 @@ body {
   background-color: black;
 }
 
+body p {
+  margin-bottom: 1em;
+}
+
 a {
   color: #71f54a;
 }
@@ -11634,11 +11638,16 @@ a.button.is-primary {
 
 .home-contact .logo-mail {
   font-size: 20em;
-  color: #20ca58;
+  color: #5fef8e;
 }
 
 .home-contact input, .home-contact textarea {
   margin-bottom: 1em;
+}
+
+.home-presentation {
+  color: #dedddd;
+  font-size: 1.2em;
 }
 
 h2 {
@@ -11653,8 +11662,19 @@ h2 {
   }
 }
 
+.portrait {
+  border-radius: 50%;
+  text-align: center;
+  -o-object-position: center;
+     object-position: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+
 footer {
-  background: #1d1d1d;
+  background: url("../../img/fond.png") top no-repeat;
+  background-size: 100%;
+  background-color: #1d1d1d;
   padding: 4em;
   color: #dedddd;
 }
