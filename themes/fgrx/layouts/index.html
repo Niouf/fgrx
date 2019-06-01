@@ -7,33 +7,35 @@
 
 <body>
 
-<section class="home-top">
-    <div class="content-home-top">
-        <div class="inner-home">
-            <div class="columns"></div>
-            <h1 class='title'><span class='fg'>{{ $.Site.Data.paramsite.title }}</span><br><span class='devlyon'>{{ $.Site.Data.paramsite.subtitle1 }}</span></h1>
-            <h2 class='title technos'><i class="far fa-heart"></i> {{ $.Site.Data.paramsite.subtitle2 }}</h2>
+<section>
+    <div class="home-top">
+        <div class="content-home-top ">
+            <div class="inner-home">
+                <h1 class='title'><span class='fg'>{{ $.Site.Data.paramsite.title }}</span><br><span class='devlyon'>{{ $.Site.Data.paramsite.subtitle1 }}</span></h1>
+                <h2 class='title technos'><i class="far fa-heart"></i> {{ $.Site.Data.paramsite.subtitle2 }}</h2>
+            </div>
         </div>
     </div>
-
 </section>
 
 
 
 
 
-<section class="home-competences">
-    <div class="container">
-        <h2 class='is-2'>Mes compétences</h2>
-        
-        <div class="columns competences">
-            <div class="column is-half-mobile"><i class="fab fa-angular"></i> <br> Angular</div>
-            <div class="column is-half-mobile"><i class="fab fa-symfony"></i> <br> Symfony</div>
-            <div class="column is-half-mobile"><i class="fab fa-php"></i> <br> PHP</div>
-            <div class="column is-half-mobile"><i class="fab fa-node"></i> <br> Node.js</div>
-            <div class="column is-half-mobile"><i class="fab fa-vuejs"></i> <br> Vue.js</div>
+<section>
+    <div class="section home-competences">
+        <div class="container">
+            <h2 class='is-2'>Mes compétences</h2>
+            
+            <div class="columns competences">
+                <div class="column"><i class="fab fa-angular"></i> <br> Angular</div>
+                <div class="column"><i class="fab fa-symfony"></i> <br> Symfony</div>
+                <div class="column"><i class="fab fa-php"></i> <br> PHP</div>
+                <div class="column"><i class="fab fa-node"></i> <br> Node.js</div>
+                <div class="column"><i class="fab fa-vuejs"></i> <br> Vue.js</div>
+            </div>
+            
         </div>
-        
     </div>
 </section>
 
@@ -45,53 +47,56 @@
 </section>
 
 
-<section class="home-contact">
-    <div class="container">
-        <div class="columns">
-            <div class="column is-3 is-hidden-mobile    ">
-                <!--<img src='{{ "img/mail1.png" | absURL }}' alt="image de contact" />-->
-                <i class="logo-mail fas fa-envelope"></i>
-            </div>
-            <div class="is-6 is-offset-1 column">
-                <h2>Rencontrons nous !</h2>
-                <form name="contact" method="POST" data-netlify="true">
-                    <p>
-                        <label>Votre e-mail * : <input class="input" required type="email" name="email" /></label>
-                    </p>
-                    <p>
-                        <label>Titre du message :  <input class="input" type="text" name="titre" /></label>
-                    </p>
-                    <p>
-                        <label>Votre message: <textarea class="textarea" required name="message" rows="4"></textarea></label>
-                    </p>
-                    <p>
-                        <button class='button' type="submit">Envoyer</button>
-                    </p>
-                </form>
-            </div>
+<section>
+    <div class="section home-contact">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-3 is-hidden-mobile    ">
+                    <!--<img src='{{ "img/mail1.png" | absURL }}' alt="image de contact" />-->
+                    <i class="logo-mail fas fa-envelope"></i>
+                </div>
+                <div class="is-6 is-offset-1 column">
+                    <h2>Rencontrons nous !</h2>
+                    <form name="contact" method="POST" data-netlify="true">
+                        <p>
+                            <label>Votre e-mail * : <input class="input" required type="email" name="email" /></label>
+                        </p>
+                        <p>
+                            <label>Titre du message :  <input class="input" type="text" name="titre" /></label>
+                        </p>
+                        <p>
+                            <label>Votre message: <textarea class="textarea" required name="message" rows="4"></textarea></label>
+                        </p>
+                        <p>
+                            <button class='button' type="submit">Envoyer</button>
+                        </p>
+                    </form>
+                </div>
 
+            </div>
+            
         </div>
-        
     </div>
-    
 
 </section>
 
 
 <footer>
-    <div class="container">
-        <div class="columns">
-            <div class="column ">
-                <p>
-                    <span class="fg">Fabien Grignoux</span><br>
-                    <span class='devlyon'>Développeur web fullstack à Lyon</span>
-                </p>
-            </div>
-            <div class="column">
-                <div class="buttons">
-                    <a target="_blank" class='button is-primary is-outlined' href='https://www.linkedin.com/in/fabien-grignoux-3ab9a4167/'><i class="fab fa-linkedin"></i> LinkedIn</a><br>
-                    <a target="_blank" class='button is-primary is-outlined'  href='mailto:{{ $.Site.Data.paramsite.mail }}'><i class="fas fa-envelope"></i> Email</a><br>
-                    <a class='button is-primary is-outlined'  href='phone:{{ $.Site.Data.paramsite.phone }}'><i class="fas fa-phone"></i> {{ $.Site.Data.paramsite.phone }}</a>
+    <div class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column ">
+                    <p>
+                        <span class="fg">Fabien Grignoux</span><br>
+                        <span class='devlyon'>Développeur web fullstack à Lyon</span>
+                    </p>
+                </div>
+                <div class="column">
+                    <div class="buttons">
+                        <a target="_blank" class='button is-primary is-outlined' href='https://www.linkedin.com/in/fabien-grignoux-3ab9a4167/'><i class="fab fa-linkedin"></i> LinkedIn</a><br>
+                        <a target="_blank" class='button is-primary is-outlined'  href='mailto:{{ $.Site.Data.paramsite.mail }}'><i class="fas fa-envelope"></i> Email</a><br>
+                        <a class='button is-primary is-outlined'  href='phone:{{ $.Site.Data.paramsite.phone }}'><i class="fas fa-phone"></i> {{ $.Site.Data.paramsite.phone }}</a>
+                    </div>
                 </div>
             </div>
         </div>

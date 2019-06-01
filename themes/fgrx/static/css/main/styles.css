@@ -11618,8 +11618,8 @@ a.button.is-primary {
 }
 
 @media screen and (max-width: 700px) {
-  .home-competences {
-    font-size: 2em;
+  .home-competences i {
+    font-size: 1.7em;
   }
 }
 
