@@ -11682,4 +11682,10 @@ footer {
 footer .devlyon {
   font-size: 1.3em;
 }
+
+.centered {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 /*# sourceMappingURL=styles.css.map */
