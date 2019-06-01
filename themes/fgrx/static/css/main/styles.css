@@ -11617,6 +11617,12 @@ a.button.is-primary {
   font-size: 3.5em;
 }
 
+@media screen and (max-width: 700px) {
+  .home-competences {
+    font-size: 2em;
+  }
+}
+
 .home-contact {
   background: white;
   padding: 4em;
@@ -11639,6 +11645,12 @@ h2 {
   color: #dedddd;
   font-size: 4em;
   font-family: "Teko";
+}
+
+@media screen and (max-width: 700px) {
+  h2 {
+    font-size: 2.5em;
+  }
 }
 
 footer {
