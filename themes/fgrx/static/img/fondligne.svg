@@ -10,13 +10,13 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="1000"
-   height="150"
-   viewBox="0 0 264.58333 39.6875"
+   height="35"
+   viewBox="0 0 264.58333 9.2604167"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 5da689c313, 2019-01-14"
-   sodipodi:docname="fond.svg"
-   inkscape:export-filename="/home/fabien/sites/fgrx/themes/fgrx/static/img/fond.png"
+   sodipodi:docname="fondligne.svg"
+   inkscape:export-filename="/home/fabien/sites/fgrx/themes/fgrx/static/img/fondligne.png"
    inkscape:export-xdpi="190"
    inkscape:export-ydpi="190">
   <defs
@@ -26,10 +26,10 @@
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="1"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="235.38381"
+     inkscape:cx="374.95607"
      inkscape:cy="58.638448"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -40,7 +40,7 @@
      inkscape:window-x="0"
      inkscape:window-y="30"
      inkscape:window-maximized="1"
-     inkscape:pagecheckerboard="false" />
+     inkscape:pagecheckerboard="true" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -49,7 +49,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -57,12 +57,14 @@
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-257.31249)">
+     transform="translate(0,-287.73957)">
     <path
-       style="fill:#1d1d1d;fill-opacity:1;stroke-width:0.13390419"
-       d="m -0.58315846,263.20399 6.14719916,4.14268 29.8491713,-8.95353 26.726953,5.21175 38.353175,-5.87993 33.62733,7.21628 27.57353,-7.0394 36.61978,7.70758 23.92062,-5.3454 20.45042,7.60604 7.43064,10.70193 11.62622,7.08264 4.67722,16.03617 -134.03568,0.53454 H -0.58315844 Z"
+       style="fill:#1d1d1d;fill-opacity:1;stroke-width:0.08646969"
+       d="m -0.04861938,290.34708 6.14110068,1.72923 24.8807757,-3.45003 26.304703,5.3486 23.081013,0.95716 20.568647,-6.872 34.1285,5.28399 27.01164,-5.21016 36.58345,3.21728 23.89689,-2.23126 25.50229,3.58502 17.97087,-1.85579 3.07054,8.86925 -2.40303,6.69378 -133.90271,0.22313 H -0.04861938 Z"
        id="path817"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccccccccccccccc" />
+       sodipodi:nodetypes="ccccccccccccccccc"
+       inkscape:export-xdpi="190"
+       inkscape:export-ydpi="190" />
   </g>
 </svg>

@@ -101,12 +101,50 @@ a.button.is-primary{
 
 
 
+.whatfor{
+	color:white;
+	background:url("../../img/fondligne.png") bottom no-repeat;
+	background-size: 100%;
+	background-color:#3a3a3a;
+	background-position-y:101%;
+	.title{
+		text-align: center;
+		color:white;
+	}
+
+
+	.whatfor-item{
+		padding:3em;
+		padding-top:8em;
+		//margin-top:4em;
+	} 
+	
+	.whatfor-item1{
+		background:url("../../img/gear.png") top no-repeat;
+		background-size: 7em;
+	}
+
+
+	.whatfor-item2{
+		background:url("../../img/responsive.png") top no-repeat;
+		background-size:7em;
+	}
+
+
+	.whatfor-item3{
+		background:url("../../img/mobile.png") top no-repeat;
+		background-size:7em;
+	}
+}
+
 .home-realisations{
 	background:$background-princ;
 }
 
 .home-competences{
-	background:$couleur-princ;
+	
+	background:url("../../img/fleche.png") top no-repeat $couleur-princ;
+	background-size:7em;
 		padding-bottom:2em;
 		text-align:center;
 	h2{
@@ -148,6 +186,7 @@ a.button.is-primary{
 }
 
 .home-presentation{
+	margin-top:-2px;
 	color:$couleur-text-light;
 	font-size:1.2em;
 }
@@ -156,6 +195,10 @@ h2{
 	color:$couleur-text-light;
 	font-size:4em;
 	font-family:"Teko";
+}
+
+.title3{
+	font-family:"Philosopher";
 }
 
 @media screen and (max-width: 700px) {
