@@ -11,8 +11,11 @@
     <div class="home-top">
         <div class="content-home-top ">
             <div class="inner-home">
-                <h1 class='title'><span class='fg'>{{ $.Site.Data.paramsite.title }}</span><br><span class='devlyon'>{{ $.Site.Data.paramsite.subtitle1 }}</span></h1>
-                <h2 class='title technos'><i class="far fa-heart"></i> {{ $.Site.Data.paramsite.subtitle2 }}</h2>
+                <div class="container">
+                        <h1 class='title'><span class='fg'>{{ $.Site.Data.paramsite.title }}</span><br><span class='devlyon'>{{ $.Site.Data.paramsite.subtitle1 }}</span></h1>
+                        <h2 class='title technos'><i class="far fa-heart"></i> {{ $.Site.Data.paramsite.subtitle2 }}</h2>
+                </div>
+
             </div>
         </div>
     </div>
@@ -25,17 +28,17 @@
             <div class="columns">
                 <div class="column whatfor-item whatfor-item1">
                     <p class='title3 title is-3'>Applications sur mesure</p>
-                    <p>Je conçois et réalise des applications métier pour les besoins spécifiques à votre entreprise.</p>
+                    <p>Je conçois et réalise des applications métier pour les besoins spécifiques à votre entreprise. Je peux m'intégrer sur un pojet déjà existant.</p>
                 </div>
                 <div class="is-divider-vertical"></div>
                 <div class="column whatfor-item whatfor-item2">
                     <p class='title3 title is-3'>Sites internet</p>
-                    <p>Votre entreprise a besoin d'un nouveau site internet ? Pas de problème ! Je propose des solutions clefs en main basées sur Wordpress & Hugo</p>
+                    <p>Votre entreprise a besoin d'un nouveau site internet ? Pas de problème ! Je propose des solutions clefs en main que vous pourrez gérer vous même.</p>
                 </div>
                 <div class="is-divider-vertical"></div>
                 <div class="column whatfor-item whatfor-item3">
                     <p class='title3 title is-3'>Applications mobiles</p>
-                    <p>Je développe des applications mobiles disponibles sur le playstore Android.</p>
+                    <p>Je développe des applications mobiles disponible en utilisant des outils de création multiplateforme. Comment ? En utilisant les frameworks Angular & Ionic</p>
                 </div>
             </div>
         </div>
@@ -86,8 +89,34 @@
 <section>
     <div class="section home-realisations">
         <div class="container">
-            <h2 class='is-2'>Quelques réalisations</h2>
-            <div class="column"></div>
+            <h2 class='is-2'>Quelques réalisations <span class='small'>(... car il y en eu beaucoup !)</span></h2>
+            <div class="column">
+
+                {{ if len (where .Site.RegularPages "Type" "=" "projets") }}
+                <section class='bloc section-publication'>
+                    <div class='container padding'>
+                        <div class='columns is-multiline'>
+                            {{ range first 6 (where .Site.RegularPages "Type" "projets").ByDate.Reverse }}
+                                <div class='column is-one-third'>
+
+                                        <div class='publication'>
+                                            <div class='publication-image'>
+                                                <img class='zoom lazy' src='{{ "img/placeholder.png" | absURL }}' data-src='{{ $.Site.Data.paramsite.baseUrlImage }}/w_400/{{ .Params.logo }}' alt="Logo de l'article {{ .Title }}" />
+                                            </div>
+                                            
+                                            <div class='publication-titre'>
+                                                    <h3 class='subtitle is-4'>{{ .Title }}</h3>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                            {{ end }}	
+                        </div>
+                    </div>
+                </section>
+                {{ end }}
+
+            </div>
                 
         </div>
     </div>
@@ -150,6 +179,24 @@
     </div>
 </footer>
 
+
+<script>
+    (function() {
+        var burger = document.querySelector('.burger');
+        var nav = document.querySelector('#'+burger.dataset.target);
+        
+        burger.addEventListener('click', function(){
+            console.log("pouet");
+        burger.classList.toggle('is-active');
+        nav.classList.toggle('is-active');
+        });
+    })();
+</script>
+
+<script src='{{ "/js/yall.min.js" | absURL }}'></script>
+<script>
+    document.addEventListener("DOMContentLoaded", yall);
+</script>
 </body>
 
 

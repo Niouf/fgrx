@@ -43,7 +43,7 @@ a.button.is-primary{
 		background-attachment: fixed;
 		background-size: cover;
 		display:block;
-		height:80vh;
+		height:65vh;
 		top:0;
 		bottom:0;
 		width: 100%;
@@ -114,6 +114,8 @@ a.button.is-primary{
 
 
 	.whatfor-item{
+		margin-top:2em;
+		margin-bottom:2em;
 		padding:3em;
 		padding-top:8em;
 		//margin-top:4em;
@@ -139,6 +141,11 @@ a.button.is-primary{
 
 .home-realisations{
 	background:$background-princ;
+	color:$couleur-text-light;
+
+	.is-4{
+		color:$couleur-text-light;
+	}
 }
 
 .home-competences{
@@ -195,6 +202,10 @@ h2{
 	color:$couleur-text-light;
 	font-size:4em;
 	font-family:"Teko";
+
+	.small{
+		font-size:0.5em;
+	}
 }
 
 .title3{

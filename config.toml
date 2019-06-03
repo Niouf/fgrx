@@ -1,5 +1,6 @@
 baseURL = "https://fgrx.netlify.com"
 languageCode = "fr-FR"
 theme = "fgrx"
+title="Fabien Grignoux développeur web fullstack à lyon"
 [params]
 description = "Fabien Grignoux développeur web fullstack passionné"
