@@ -11742,4 +11742,9 @@ footer .devlyon {
 .data-more {
   display: none;
 }
+
+.portfolio a {
+  text-decoration: none;
+  color: #dedddd;
+}
 /*# sourceMappingURL=styles.css.map */

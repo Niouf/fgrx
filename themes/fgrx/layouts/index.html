@@ -99,7 +99,7 @@
                             {{ range first 6 (where .Site.RegularPages "Type" "projets").ByDate.Reverse }}
                                 <div class='column is-one-third'>
                                         <div class='portfolio'>
-                                            <a href='#' onClick="seemore()">
+                                            
                                             <div class='portfolio-image'>
                                                 <img class='zoom lazy' src='{{ "img/placeholder.png" | absURL }}' data-src='{{ $.Site.Data.paramsite.baseUrlImage }}/{{ .Params.logo }}' alt="Logo de l'article {{ .Title }}" />
                                             </div>
@@ -108,7 +108,7 @@
                                                     <h3 class='subtitle is-4'>{{ .Title }}</h3>
                                                     <p class='portfolio-technos'>Technos : {{ .Params.technos }}</p>
                                             </div>
-                                            </a>
+                                            
                                             <div class="portfolio-text">
                                                 
                                                 <p class="portfolio-description">{{ .Content }}</p>
@@ -203,17 +203,11 @@
     })();
 </script>
 
-
-<!-- <script>
+<script>
     function seemore(){
-        alert("ici");
-        if (el.classList){
-            el.classList.remove("portfolio-text");
-        }else{
-            el.portfolio-text = el.portfolio-text.replace(new RegExp('(^|\\b)' + portfolio-text.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
-        }
+        return false;
     }
-</script> -->
+</script>
 
 
 

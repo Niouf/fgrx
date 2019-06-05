@@ -247,3 +247,10 @@ footer{
 .data-more{
 	display:none;
 }
+
+.portfolio{
+	a{
+		text-decoration:none;
+		color:$couleur-text-light;
+	}
+}
